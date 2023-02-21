@@ -1,10 +1,7 @@
 def URLify(str):
-	y=""
-	for x in str:
-		if(x==" "):
-			x="%20"
-		y += x
-	return(y)
+	return(str.replace(" ", "%20"))
+
+
 
 good = " Im  so tired  "
 print(URLify(good))
