@@ -1,21 +1,12 @@
-def counter(str):
+def count(str):
     d = {}
-    if str == '':
-        return d
-
-    array = []
-    for x in str:
-        array.append(x)
-    
-    for key in array:
-        if(d.get(key)==None):
+    for key in str:
+        if(key not in d):
             d[key] = 1
-            print(d.get(key))
         else:
-            count = d.get(key)+1
-            d[key] = count
+            d[key] += 1
     return d
 
-sent = 'abca'
+sent = 'abcaaacsdf'
 
-print(counter(sent))
+print(count(sent))
