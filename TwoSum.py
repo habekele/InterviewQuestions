@@ -1,6 +1,5 @@
 def twosum(a,target):
    
-
     complementMap = dict()
  
     for count, value in enumerate(a): # i is index v is ap
