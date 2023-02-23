@@ -13,5 +13,17 @@ def containsDuplicate(a):
                 return True
         
     return False
-print(containsDuplicate([2,14,18,22,22]))
+
+def containsDuplicateHashMap(a):
+
+    hashMap = dict()
+    for count,value in enumerate(a):
+        if value in hashMap:
+            return True
+        hashMap[value] = count
+
+    return False
+
+
+print(containsDuplicateHashMap([2,14,18,22,22]))
     
