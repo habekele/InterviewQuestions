@@ -12,6 +12,6 @@ def twosum(a,target):
 
     
 
-arr = [2,1,5,3]
-print(twosum(arr,7))
+arr = [2,7,11,15]
+print(twosum(arr,9))
 
