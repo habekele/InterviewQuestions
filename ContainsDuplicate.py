@@ -23,7 +23,11 @@ def containsDuplicateHashMap(a):
         hashMap[value] = count
 
     return False
-
+def containsDuplicateAgian(a):
+    for x in a:
+        if a.count(x) > 1:
+            return True
+    return False
 
 print(containsDuplicateHashMap([2,14,18,22,22]))
-    
+print(containsDuplicateAgian([2,14,18,21,22]))

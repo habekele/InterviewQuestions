@@ -45,8 +45,12 @@
 
 
 some_list = ['a','b','c','b','d','m','n','n']
-duplicate = []
-for item in some_list:
-    if some_list.count(item) > 1 and item not in duplicate:
-        duplicate.append(item)
-print (duplicate)
+
+def find_dup(a):
+    duplicate = []
+    for item in some_list:
+        if some_list.count(item) > 1 and item not in duplicate:
+            duplicate.append(item)
+    print (duplicate)
+
+find_dup(some_list)
