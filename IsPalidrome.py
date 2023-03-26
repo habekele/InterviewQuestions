@@ -2,7 +2,7 @@ def isPalidrome(n):
     n= n.lower()
     
     for i in n:
-        if(i.isalnum() == False):
+        if(i.isalnum() is False):
             n=n.replace(i, "")
     x=0
     for i in n[::-1]:
