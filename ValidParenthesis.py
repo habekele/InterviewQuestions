@@ -12,4 +12,4 @@ def isValid(s):
             stack.append(x)#if an open bracket then add to the stack
     return True if not stack else False #if there is still stuff in the stack then return false
 
-print(isValid('{[}'))
+print(isValid('{[]}'))
